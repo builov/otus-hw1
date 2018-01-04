@@ -10,10 +10,10 @@ class MyLib
 			else if ($char == ')') $c--;
 			else if ($char != "\t" && $char != "\n" && $char != "\r" && $char != ' ')
 				throw new Exception('InvalidArgumentException');
-			//echo $char . ': ' . $c . "\n";
+			if ($c < 0) return false;
 		}
-		return ($c == 0) ? 'true' : 'false';
+		return ($c == 0) ? true : false;
 	}
 }
 
-//echo MyLib::check_str('(()()()()))((((()()()))(()()()(((( )))))))');
+
