@@ -1,0 +1,7 @@
+{
+    "name": "builov/lib1",
+    "description": "test lib",
+    "type": "library",
+    "license": "MIT",
+    "require": {}
+}
